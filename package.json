@@ -1,7 +1,7 @@
 {
   "name": "reign-fitness-api",
   "version": "1.0.0",
-  "description": "This API gives Reign Fitness admin access to Reign Fitness memberships.",
+  "description": "git ",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
