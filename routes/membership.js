@@ -8,6 +8,6 @@ const fetchAllMemberships = require("../controllers/fetchMemberships");
 
 router.get("/", fetchAllMemberships);
 router.post("/", createMembership)
-router.get(":id", fetchMembership);
+router.get("/:id", fetchMembership);
 
 module.exports = router;

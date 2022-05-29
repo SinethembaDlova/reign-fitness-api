@@ -6,7 +6,7 @@ const membershipRoutes = require("./routes/membership");
 
 const app = express();
 const PORT = parseInt(process.env.PORT) || 5000;
-const DB  = process.env.MONGO_URL || "mongodb://localhost/reign_fitness";
+const DB  = process.env.MONGO_URL || "mongodb://localhost:27017/reign_fitness";
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
