@@ -4,6 +4,7 @@
   "description": "git ",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon indexnpm.js",
     "test": "mocha"
   },
   "author": "Sinethemba Dlova",

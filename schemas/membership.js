@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const membershipSchema = new Schema({
     id: { type: String, unique: true, sparse: true, default: v4() },
     first_name: { type: String, required: true },
-    last_name: { type: string, required: true },
+    last_name: { type: String, required: true },
     id_number: { type: String, required: true },
     is_active: { type: Boolean, required: true, default: true },
     payment_type: { type: String, required: true },
