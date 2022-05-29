@@ -12,7 +12,7 @@ const membershipSchema = new Schema({
     is_active: { type: Boolean, required: true, default: true },
     payment_type: { type: String, required: true },
     bank_account_number: { type: Number },
-    contract: { type: String, required: true },
+    contract_type: { type: String, required: true },
     amount: { type: Number, required: true}
 });
 
