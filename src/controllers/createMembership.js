@@ -1,4 +1,4 @@
-const Membership = require("../schemas/membership");
+const Membership = require("../../schemas/membership");
 
 module.exports = async (req, res) => {
     const {  
@@ -9,7 +9,8 @@ module.exports = async (req, res) => {
         payment_type,
         bank_account_number,
         contract_type,
-        amount } = req.body;
+        amount 
+    } = req.body;
     try {
       const membership = await Membership.create({ 
         first_name, 

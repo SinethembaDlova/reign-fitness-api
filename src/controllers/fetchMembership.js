@@ -3,7 +3,6 @@ const Membership = require("../schemas/membership");
 
 module.exports = async (req, res) => {
   const { id } = req.params;
-  console.log("id: ", id)
   try {
     const membership = await Membership.findById(id);
     if (membership.length > 0) {
