@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon indexnpm.js",
-    "test": "mocha"
+    "test": "mocha 'tests/**/*.js' --timeout 60000 --exit"
   },
   "author": "Sinethemba Dlova",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.6",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mocha": "^10.0.0",
