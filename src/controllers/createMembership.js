@@ -1,4 +1,4 @@
-const Membership = require("../../schemas/membership");
+const Membership = require("../schemas/membership");
 
 module.exports = async (req, res) => {
     const {  
