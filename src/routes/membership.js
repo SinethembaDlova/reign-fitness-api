@@ -9,7 +9,7 @@ const createMembership = require("../controllers/createMembership")
 const fetchMembership = require("../controllers/fetchMembership");
 const fetchAllMemberships = require("../controllers/fetchMemberships");
 
-router.get("/", cors(), fetchAllMemberships);
+router.get("/", cors({origin: '*'}), fetchAllMemberships);
 router.post("/", createMembership)
 router.get(":id", cors(), fetchMembership);
 
