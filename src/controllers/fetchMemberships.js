@@ -2,7 +2,6 @@ const Membership = require("../schemas/membership");
 
 module.exports = async (req, res) => {
   try {
-    res.header("Access-Control-Allow-Origin", "*");
     const memberships = await Membership.find();
     if (memberships.length > 0) {
       res.status(200).json({ data: memberships, message: "Successfully fetched memberships." });
