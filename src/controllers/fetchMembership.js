@@ -4,6 +4,8 @@ const Membership = require("../schemas/membership");
 module.exports = async (req, res) => {
   const { id } = req.params;
   try {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.send('cors problem fixed:)');
     const membership = await Membership.findById(id);
     if (membership.length > 0) {
         res.status(200).json({ data: membership, message: "Successfully fetched membership." });

@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
         amount 
     } = req.body;
     try {
+      res.setHeader('Access-Control-Allow-Origin', '*');
       const membership = await Membership.create({ 
         first_name, 
         last_name, 
