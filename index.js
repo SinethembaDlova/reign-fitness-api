@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const membershipRoutes = require("./src/routes/membership");
 
 const app = express();
-const PORT = parseInt(process.env.PORT) || 3001;
+const PORT = parseInt(process.env.PORT) || 8080;
 const DB  = process.env.MONGO_DB || 'mongodb://localhost:27017/reign_fitness';
 
 app.use(express.json());
