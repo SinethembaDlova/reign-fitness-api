@@ -9,7 +9,7 @@ const DB  = process.env.MONGO_DB || 'mongodb://localhost:27017/reign_fitness';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({origin: "http://localhost:/8080"}));
+app.use(cors({origin: "http://localhost:/3000"}));
 
 app.use("/memberships", membershipRoutes);
 
