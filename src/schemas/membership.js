@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
  
 
 const membershipSchema = new Schema({
-    id: { type: String, unique: true, sparse: true, default: new mongoose.mongo.ObjectId() },
     first_name: { type: String, required: true },
     last_name: { type: String, required: true },
     phone_number: { type: String, required: true },
